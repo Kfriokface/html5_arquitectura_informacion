@@ -9,10 +9,10 @@
   </head>
   <body>
     <header>
-      <figure class="logo">
-        <img src="/assets/images/logotipoJKG.png" alt="Logotipo de JugandoKesGerundio" width="600" height="91" />
+      <figure class="logo" style="float: left; max-width: 400px;">
+        <img src="/assets/images/logotipoJKG.png" alt="Logotipo de JugandoKesGerundio" width="100%" height="auto" />
       </figure>
-      <nav class="menu">
+      <nav class="menu"  style="float: right;">
         <ul>
           <li><a href="/index.html">Inicio</a></li>
           <li><a href="#jkg_categorias">Categorias</a></li>
@@ -30,31 +30,52 @@
           <source srcset="/assets/images/slider/slider_w_538.jpg" media="(max-width: 538px)" />
           <source srcset="/assets/images/slider/slider_w_720.jpg" media="(max-width: 720px)" />
           <source srcset="/assets/images/slider/slider_w_1920.jpg" media="(min-width: 721px)" />
-          <img src=/assets/images/slider/slider_w_1920.jpg" alt="Una mano lanzando los dados" title="El anzamiento de dados determina la fortuna" width="1920" height="600"/>
+          <img src=/assets/images/slider/slider_w_1920.jpg" alt="Una mano lanzando los dados" title="El anzamiento de dados determina la fortuna" width="100%" height="auto">
         </picture>
       </figure>
       <article>
-        <section id="jkg_categorias" class="jkg-seccion">
-          <div class="jkg-container">
+        <section id="jkg_categorias" class="jkg-seccion" style="display: flex;">
+          <div class="jkg-container" style="float: left; padding: 1em;">
             <figure><img src="/assets/images/category_320x240.jpg" alt="Juegos de cartas" title="Caregoría: juegos de cartas" /></figure>
             <h3>Juegos de Cartas</h3>
           </div>
-          <div class="jkg-container">
+          <div class="jkg-container" style="float: left; padding: 1em;">
             <figure><img src="/assets/images/category_320x240.jpg" alt="Juegos de exploración" title="Caregoría: juegos de exploración" /></figure>
             <h3>Juegos de Exploración</h3>
           </div>
-          <div class="jkg-container">
+          <div class="jkg-container" style="float: left; padding: 1em;">
             <figure><img src="/assets/images/category_320x240.jpg" alt="Eurogames" title="Caregoría: Eurogames" /></figure>
             <h3>Eurogames</h3>
           </div>
         </section>
         <section id="jkg_ultimas" class="jkg-seccion">
-
+          <div></div>
         </section>
         <section>
-          <form action=""></form>
+            <h3>Contacto</h3>
+            <p>Si quieres enviarnos un mensaje, por favor usa este formulario. Gracias.</p>
+            <form action="" method="post">
+                <input type="text" name="nombre" placeholder="Nombre completo">
+                <input type="email" name="correo" placeholder="Correo electrónico">
+                <input type="text" name="asunto" placeholder="Asunto del mensaje">
+                <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea>
+                <input type="submit" value="Enviar">
+              </form>
         </section>
       </article>
     </main>
+    <footer style="background-color: whitesmoke; padding: 1em; text-align: center; width: 100%; display: table;">
+        <figure class="logo">
+            <img src="/assets/images/logotipoJKG.png" alt="Logotipo de JugandoKesGerundio" width="300" height="45" />
+        </figure>
+        <nav>
+            <ul>
+                <li><a href="/sobre-mi">Sobre mi</a></li>
+                <li><a href="/legal">Aviso Legal</a></li>
+                <li><a href="/politica-cookies">Política de cookies</a></li>
+            </ul>
+        </nav>
+        <p><span>@2024</span> Alberto Sancho</p>
+    </footer>
   </body>
 </html>

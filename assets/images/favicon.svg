@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="175.67" height="125.85"><svg id="SvgjsSvg1001" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 175.67 125.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#Degradado_sin_nombre_3);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #4574b9;
+      }
+
+      .cls-3 {
+        fill: #4996d2;
+      }
+    </style>
+    <linearGradient id="SvgjsLinearGradient1000" data-name="Degradado sin nombre 3" x1="12.57" y1="39.78" x2="107.09" y2="39.78" gradientTransform="translate(23.99) skewX(10)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1d1d1b"></stop>
+      <stop offset="1" stop-color="#fff"></stop>
+    </linearGradient>
+  </defs>
+  <polygon class="cls-3" points="84.26 66.39 108.68 13.17 50.26 13.17 25.86 66.39 84.26 66.39"></polygon>
+  <polygon class="cls-1" points="151.25 66.39 175.67 13.17 114.93 13.17 90.54 66.39 151.25 66.39"></polygon>
+  <polygon class="cls-2" points="90.54 66.39 147.83 53.22 172.22 0 114.96 13.17 90.54 66.39"></polygon>
+  <polygon class="cls-3" points="82.79 72.63 24.4 72.63 0 125.85 58.37 125.85 82.79 72.63"></polygon>
+  <polygon class="cls-3" points="89.06 72.63 64.64 125.85 125.06 125.85 149.46 72.63 89.06 72.63"></polygon>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+</style></svg>

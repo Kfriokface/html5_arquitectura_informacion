@@ -14,7 +14,9 @@
     <style>
       input, textarea { margin-bottom: 1em; }
       input:invalid { border: 2px dashed red;}
-      img {width: 100%; height: auto; display: block;}
+      img { width: 100%; height: auto; display: block;}
+      dt { text-transform: uppercase; font-weight: bold; margin-bottom: .5em; }
+      dd { margin-bottom: 1em; }
       .jkg-container { margin: 1em 0 ; padding: 1em; text-align: center;}
       .jkg-nav-list {list-style-type: none; display: flex; margin: 0;}
       .jkg-nav-list > li {padding: 0 .5em;}
@@ -84,14 +86,16 @@
           <button style="margin: 1em 0; padding: 1em; border: none; border-radius: 5px;"><i class="fa-solid fa-dice fa-fw" style="margin-right: .25em;" aria-hidden="true"></i>¡Gerundéate aquí!</button>
         </section>
         <section id="jkg_contacto" class="jkg-contacto jkg-container">
-            <h3>Contacto</h3>
-            <p>Si quieres enviarnos un mensaje, por favor usa este formulario. Gracias.</p>
-            <form action="/index.html" method="post" style="text-align: center; display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 500px; margin: auto;">
-              <input type="text" name="nombre" placeholder="Nombre completo" style="flex: 0 1 35%;">
-              <input type="email" pattern=".+@example\.com" name="correo" placeholder="Correo electrónico" style="flex: 0 1 50%;">
-              <input type="text" name="asunto" placeholder="Asunto del mensaje" style="flex: 0 1 100%;">
-              <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..." style="flex: 0 1 100%;"></textarea>
-              <input type="submit" value="Enviar" style="margin: auto;">
+            <h2>Contacto</h2>
+            <form action="/index.html" method="post">
+              <fieldset style="text-align: center; display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 500px; margin: auto; padding: 1em;">
+                <legend>Si quieres enviarnos un mensaje, por favor usa este formulario. Gracias.</legend>
+                <input type="text" name="nombre" placeholder="Nombre completo" style="flex: 0 1 35%;">
+                <input type="email" pattern=".+@example\.com" name="correo" placeholder="Correo electrónico" style="flex: 0 1 50%;">
+                <input type="text" name="asunto" placeholder="Asunto del mensaje" style="flex: 0 1 100%;">
+                <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..." style="flex: 0 1 100%;"></textarea>
+                <input type="submit" value="Enviar" style="margin: auto;">
+              </fieldset>
             </form>
         </section>
       </article>

@@ -1,83 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JugandoKesGerundio</title>
-    <meta name="description" content="Un portal de juegos de mesa para gente que 'malgasta' su tiempo entre tableros y dados" />
-    <meta name="keywords" content="Juegos de mesa, StarWars, Dungeon & Dragons, El señor de los anillos, eurogames, estrategia, juegos de cartas" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>JugandoK'EsGerundio: una web dedicada a los juegos de mesa para todos los públicos y en español</title>
+    <meta name="description" content="Un portal de juegos de mesa para gente que 'malgasta' su tiempo entre tableros y dados" >
+    <meta name="keywords" content="Juegos de mesa, StarWars, Dungeon & Dragons, El señor de los anillos, eurogames, estrategia, juegos de cartas" >
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" >
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png" >
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/cfc6f3bbbd.js" crossorigin="anonymous"></script>
+    <!-- Styles (provisional, hasta que carguemos hojas de estilos) -->
+    <style>
+      input, textarea { margin-bottom: 1em; }
+      input:invalid { border: 2px dashed red;}
+      img {width: 100%; height: auto; display: block;}
+      .jkg-container { margin: 1em 0 ; padding: 1em; text-align: center;}
+      .jkg-nav-list {list-style-type: none; display: flex; margin: 0;}
+      .jkg-nav-list > li {padding: 0 .5em;}
+    </style>
+
   </head>
   <body>
-    <header>
-      <figure class="logo" style="float: left; max-width: 400px;">
-        <img src="/assets/images/logotipoJKG.png" alt="Logotipo de JugandoKesGerundio" width="100%" height="auto" />
+    <header style="display: flex; align-items: center; justify-content: space-between;">
+      <figure class="logo" style="max-width: 400px;">
+        <img src="/assets/images/logotipoJKG.png" alt="Logotipo de JugandoKesGerundio" width="300" height="45">
       </figure>
-      <nav class="menu"  style="float: right;">
-        <ul>
-          <li><a href="/index.html">Inicio</a></li>
+      <nav>
+        <ul class="jkg-nav-list">
+          <li><a href="/index.html" ><i class="fa-solid fa-home fa-fw" aria-label="Página inicial"></i><span style="display: none;">Inicio</span></a></li>
           <li><a href="#jkg_categorias">Categorias</a></li>
-          <li><a href="#jkg_ultimas">Últimas reseñas</a></li>
-          <li><a href="#jkg_partidas">Partidas en vivo</a></li>
           <li><a href="#jkg_comunidad">Comunidad 'Gerundil'</a></li>
           <li><a href="#jkg_contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <figure class="slider-img">
-        <picture>
-          <source srcset="/assets/images/slider/slider_w_320.jpg" media="(max-width: 360px)" />
-          <source srcset="/assets/images/slider/slider_w_538.jpg" media="(max-width: 538px)" />
-          <source srcset="/assets/images/slider/slider_w_720.jpg" media="(max-width: 720px)" />
-          <source srcset="/assets/images/slider/slider_w_1920.jpg" media="(min-width: 721px)" />
-          <img src=/assets/images/slider/slider_w_1920.jpg" alt="Una mano lanzando los dados" title="El anzamiento de dados determina la fortuna" width="100%" height="auto">
-        </picture>
-      </figure>
       <article>
-        <section id="jkg_categorias" class="jkg-seccion" style="display: flex;">
-          <div class="jkg-container" style="float: left; padding: 1em;">
-            <figure><img src="/assets/images/category_320x240.jpg" alt="Juegos de cartas" title="Caregoría: juegos de cartas" /></figure>
+        <div class="jkg-slider jkg-container">
+          <figure >
+            <picture>
+              <source srcset="/assets/images/slider/slider_w_320.jpg" media="(max-width: 360px)" >
+              <source srcset="/assets/images/slider/slider_w_538.jpg" media="(max-width: 538px)" >
+              <source srcset="/assets/images/slider/slider_w_720.jpg" media="(max-width: 720px)" >
+              <source srcset="/assets/images/slider/slider_w_1920.jpg" media="(min-width: 721px)" >
+              <img src="/assets/images/slider/slider_w_1920.jpg" alt="Una mano lanzando los dados" title="El anzamiento de dados determina la fortuna" width="1920" height="600">
+            </picture>
+          </figure>
+          <h1>JugandoK'EsGerundio, una web dedicada a los juegos de mesa para todos los públicos y en español</h1>
+        </div>
+        <section id="jkg_categorias" class="jkg-galery jkg-container" style="display: flex;">
+          <div class="jkg-wrapper" style="float: left; padding: 1em;">
+            <figure><img src="/assets/images/category_320x240.jpg" alt="Juegos de cartas" title="Categoría: juegos de cartas" width="320" height="240" ></figure>
             <h3>Juegos de Cartas</h3>
           </div>
-          <div class="jkg-container" style="float: left; padding: 1em;">
-            <figure><img src="/assets/images/category_320x240.jpg" alt="Juegos de exploración" title="Caregoría: juegos de exploración" /></figure>
+          <div class="jkg-wrapper" style="float: left; padding: 1em;">
+            <figure><img src="/assets/images/category_320x240.jpg" alt="Juegos de exploración" title="Categoría: juegos de exploración" width="320" height="240" ></figure>
             <h3>Juegos de Exploración</h3>
           </div>
-          <div class="jkg-container" style="float: left; padding: 1em;">
-            <figure><img src="/assets/images/category_320x240.jpg" alt="Eurogames" title="Caregoría: Eurogames" /></figure>
+          <div class="jkg-wrapper" style="float: left; padding: 1em;">
+            <figure><img src="/assets/images/category_320x240.jpg" alt="Eurogames" title="Categoría: Eurogames" width="320" height="240" ></figure>
             <h3>Eurogames</h3>
           </div>
+          <div class="jkg-wrapper" style="float: left; padding: 1em;">
+            <figure><img src="/assets/images/category_320x240.jpg" alt="WarGames" title="Categoría: War Games" width="320" height="240" ></figure>
+            <h3>Juegos de estrategia bélicos</h3>
+          </div>
         </section>
-        <section id="jkg_ultimas" class="jkg-seccion">
-          <div></div>
+        <section id="jkg_comunidad" class="jkg-comunidad jkg-container" style="background-color: #8dbde3;">
+          <h2>¿Quieres formar parte de nuestra comunidad de jugones?</h2>
+          <p>Si quieres disfrutar a tope de JugandoK'EsGerundio puedes registrarte en nuestra comunidad y tendrás acceso a todo el contenido de la web.</p>
+          <h4>Beneficios de ser '¡'Gerundil'!</h4>
+          <dl>
+            <dt>¿Te gusta jugar pero no tienes con quién hacerlo?</dt>
+            <dd>Problema resuelto. Podrás acceder al calendario de partidas abiertas, filtrando por juegos, niveles, localidad, etc... y apuntarte a las que te apetezca.</dd>
+            <dt>¿Te apetece crear tus propias partidas, campañas y convocar a tus amigos?</dt>
+            <dd>En caso de no existir, tendrás la posibilidad de dar de alta en nuestro sistema tu juegos favoritos y crear tus partidas con tus amigos o usuarios de la comunidad</dd>
+            <dt>¿Eres un gran comunicador y te apetece que el resto de usuarios vean tus partidas?</dt>
+            <dd>Puedes grabar tus partidas y compartir tus vídeos con el resto de usuarios, para que vean como se juega o para resolver todas esas dudas que siempre existen.</dd>
+          </dl>
+          <p>Además tendremos foros, reseñas de juegos nuevos, un ranking de los mejores juegos de todos los tiempos y todas esas cosas que nos gustan tanto a los jugones.</p>
+          <p>Seguro que te estará apeteciendo formar parte ya de JKG, no lo pienses y apúntante.</p>
+          <button style="margin: 1em 0; padding: 1em; border: none; border-radius: 5px;"><i class="fa-solid fa-dice fa-fw" style="margin-right: .25em;" aria-hidden="true"></i>¡Gerundéate aquí!</button>
         </section>
-        <section>
+        <section id="jkg_contacto" class="jkg-contacto jkg-container">
             <h3>Contacto</h3>
             <p>Si quieres enviarnos un mensaje, por favor usa este formulario. Gracias.</p>
-            <form action="" method="post">
-                <input type="text" name="nombre" placeholder="Nombre completo">
-                <input type="email" name="correo" placeholder="Correo electrónico">
-                <input type="text" name="asunto" placeholder="Asunto del mensaje">
-                <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..."></textarea>
-                <input type="submit" value="Enviar">
-              </form>
+            <form action="/index.html" method="post" style="text-align: center; display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 500px; margin: auto;">
+              <input type="text" name="nombre" placeholder="Nombre completo" style="flex: 0 1 35%;">
+              <input type="email" pattern=".+@example\.com" name="correo" placeholder="Correo electrónico" style="flex: 0 1 50%;">
+              <input type="text" name="asunto" placeholder="Asunto del mensaje" style="flex: 0 1 100%;">
+              <textarea rows="4" cols="50" placeholder="Escribe tu comentario aquí..." style="flex: 0 1 100%;"></textarea>
+              <input type="submit" value="Enviar" style="margin: auto;">
+            </form>
         </section>
       </article>
     </main>
-    <footer style="background-color: whitesmoke; padding: 1em; text-align: center; width: 100%; display: table;">
-        <figure class="logo">
-            <img src="/assets/images/logotipoJKG.png" alt="Logotipo de JugandoKesGerundio" width="300" height="45" />
+    <footer style="background-color: whitesmoke; padding: 2em 0 1em; text-align: center; width: 100%; display: table;">
+        <figure class="jkc-logo-footer" style="max-width: 300px; margin: auto;">
+            <img src="/assets/images/logotipoJKG.png" alt="Logotipo de JugandoKesGerundio" width="300" height="45" >
         </figure>
         <nav>
-            <ul>
+            <ul style="list-style-type: none;">
                 <li><a href="/sobre-mi">Sobre mi</a></li>
                 <li><a href="/legal">Aviso Legal</a></li>
                 <li><a href="/politica-cookies">Política de cookies</a></li>
             </ul>
         </nav>
-        <p><span>@2024</span> Alberto Sancho</p>
+        <div class="jkg-inner-wrapper" style="display: flex; justify-content: space-between; max-width: 1200px; margin: auto;">
+          <p><span>@2024</span> Alberto Sancho</p>
+          <ul class="jkg-nav-list">
+            <li style="margin: 0 .5em;"><a href="#" target="_blank" title="Facebook"><i class="fa-brands fa-facebook" aria-label="Visita nuestra página en Facebook"></i></a></li>
+            <li style="margin: 0 .5em;"><a href="#" target="_blank" title="X Twitter"><i class="fa-brands fa-x-twitter" aria-label="Visita nuestra página en X"></i></a></li>
+            <li style="margin: 0 .5em;"><a href="#" target="_blank" title="Youtube"><i class="fa-brands fa-youtube" aria-label="Visita nuestra página en Youtube"></i></a></li>
+            <li style="margin: 0 .5em;"><a href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram" aria-label="Visita nuestra página en Instagram"></i></a></li>
+            <li style="margin: 0 .5em;"><a href="#" target="_blank" title="Pinterest"><i class="fa-brands fa-pinterest" aria-label="Visita nuestra página en Pinterest"></i></a></li>
+          </ul>
+        </div>
     </footer>
   </body>
 </html>
